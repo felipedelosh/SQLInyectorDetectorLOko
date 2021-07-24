@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Banco TEQUEBRAMOS</title>
+		<link rel="stylesheet type="text/css" href="css/bootstrap.min.css">
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid bg-light">
+			<div class="container">
+				<!-- Banner principal -->
+				<div class="row bg-danger">
+					<div class="col">
+						<h1>TEQUEBRAMOS</h1>
+					</div>
+				</div>
+				<!-- Contenido pagina -->
+
+					
+					  <form>
+					  <div class="form-group">
+					    <label for="exampleInputEmail1">Email address</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputPassword1">Password</label>
+					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					  </div>
+  
+					  <button type="submit" class="btn btn-primary" onclick="myFunction()">login</button>
+					  </form>
+
+				<!-- pie de pagina -->
+				<div class="bg-dark">
+					<p class="text-center text-light">2021</p>
+				</div>
+			<div>
+		</div>
+
+		<script>
+		function myFunction() {
+		  var username = document.getElementById('exampleInputEmail1').value;
+		  
+		  var password = document.getElementById('exampleInputPassword1').value;;
+
+		  alert("Enviando Datos al Servidor... "+username+"/"+password);
+		  var URLactual = window.location;
+		  window.open(URLactual+"/"+username+"/"+password,"_self")
+
+		
+ 		}
+		</script>
+	</body>
+</html>
