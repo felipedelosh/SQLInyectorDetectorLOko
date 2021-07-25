@@ -1,0 +1,4 @@
+login
+select * from user where username='example' and password='example';
+search
+select * from tabla where description like '%palabra%';
